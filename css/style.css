@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #797778;
+}
+body {
+  height: 100vh;
+  background: url(../img/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 1.2em;
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+}
+
+.container {
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #111;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 33%;
+  left: 47%;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.pesquisa-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+
+.pesquisa-container input,
+.pesquisa-container button {
+  font-size: 0.9em;
+  outline: none;
+  border-radius: 0.4em;
+}
+
+.pesquisa-container input {
+  background-color: transparent;
+  border: 1px solid #666;
+  padding: 0.6em;
+  color: #d7d7d7;
+}
+
+.pesquisa-container input:focus {
+  border-color: #fff;
+}
+
+.pesquisa-container button {
+  background-color: #d7d7d7;
+  border: none;
+  cursor: pointer;
+}
+
+#resultado {
+  color: #fff;
+}
+
+.info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin-top: 1.2em;
+}
+
+.poster {
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0.6em 0 0.9em 0;
+}
+
+.rating img {
+  width: 1.2em;
+}
+
+.rating h4 {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.detalhes {
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  margin: 0.6em;
+  font-weight: 300;
+}
+
+.genero {
+  display: flex;
+  justify-content: space-around;
+}
+
+.genero div {
+  border: 1px solid #a0a0a0;
+  font-size: 0.75em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.4em;
+  font-weight: 300;
+}
+
+.msg {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+    top: 38%;
+  }
+  .poster {
+    margin: auto;
+    width: auto;
+    max-height: 10.8em;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
